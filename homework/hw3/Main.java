@@ -12,13 +12,12 @@ public class Main {
     public static void main(String[] args) {
         init();
         
-        Scanner scanner = new Scanner(System.in);
-
-        while(true){
-        ConsoleView.view();
-        System.out.println("Press Enter");
-        scanner.nextLine();
-        
+        try (Scanner scanner = new Scanner(System.in)) {
+            while(true){
+            ConsoleView.view();
+            System.out.println("Press Enter");
+            scanner.nextLine();
+            }
         }
     }
     public static void init(){
