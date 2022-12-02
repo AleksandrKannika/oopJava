@@ -28,14 +28,10 @@ public class Main {
         int y = 1;
         for (int i = 0; i < TeamSize; i++) {
             int a = (int) (Math.random() * 4);
-            if (a == 0)
-                team1.add(new Peasant(team1, x, y));
-            else if (a == 1)
-                team1.add(new Robber(team1, x, y));
-            else if (a == 2)
-                team1.add(new Sniper(team1, x, y));
-            else if (a == 3)
-                team1.add(new Witch(team1, x, y));
+            if (a == 0) team1.add(new Peasant(team1, x, y));
+            else if (a == 1) team1.add(new Robber(team1, x, y));
+            else if (a == 2) team1.add(new Sniper(team1, x, y));
+            else if (a == 3) team1.add(new Witch(team1, x, y));
             x++;
 
         }
